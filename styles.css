@@ -1,13 +1,44 @@
+.aaron {
+  --theme-color: lightcoral;
+}
+
+.dan {
+  --theme-color: lightseagreen;
+}
+
 body {
   margin: 0;
-  padding: 50px;
-  background: var(--theme-color);
   font-family: sans-serif;
+}
+
+body,
+.container {
+  background: var(--theme-color);
+}
+
+main.home {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+}
+
+main.home .container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: white;
   font-size: 7rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+main.home h1 {
+  position: absolute;
 }
 
 a {
@@ -17,4 +48,12 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ddd;
+  font-size: 0.5rem;
 }
